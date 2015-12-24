@@ -25,6 +25,6 @@ C:\Users\Yovin\Desktop\test\after\Framework\Framework\obj\Debug\Framework.pdb
 F:\Campello\CampelloInvoice\Framework\bin\Framework.dll.config
 F:\Campello\CampelloInvoice\Framework\bin\Framework.dll
 F:\Campello\CampelloInvoice\Framework\bin\Framework.pdb
-F:\Campello\CampelloInvoice\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
 F:\Campello\CampelloInvoice\Framework\obj\Debug\Framework.dll
 F:\Campello\CampelloInvoice\Framework\obj\Debug\Framework.pdb
+F:\Campello\CampelloInvoice\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
