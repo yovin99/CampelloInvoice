@@ -1,22 +1,46 @@
 
 <div class="section">
 
-    <div class="container">
+    <div class="container" ng-controller="adminPortalCtlr">
 
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2>Display Some Work on the Home Page Portfolio</h2>
-                <hr>
+        <div class="col-md-12">
 
-                <div ng-controller="adminPortalCtlr">
-                    <ul>
-                        <li ng-repeat="i in getNumber(myNumber) track by $index"><span>{{$index+1}}</span></li>
-                    </ul>
+            <div class="col-md-3">
+                <ul id="sidebar" class="nav nav-pills nav-stacked">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search" ng-model="searchCompany">
+                    </div>
+                    <li ng-repeat="company in companies | filter: searchCompany track by $index ">
+                        <a ng-click="viewEmployees($index)">{{company.company_name}}</a>
+                    </li>
 
-                    <ul>
-                        <li ng-repeat="i in getNumber(myOtherNumber) track by $index"><span>{{$index+1}}</span></li>
-                    </ul>
-                </div>
+                    
+                </ul>
+            </div>
+
+            <div class="col-md-9" >
+                <!--<h1>Company Details</h1>
+                <hr>-->
+
+                <table class="table table-striped">
+                    <tr>
+                        <th>
+                            Employees
+                        </th>
+                        <th>
+                            Roles Assigned
+                        </th>
+                    </tr>
+                    <tr ng-repeat="employee in employeeeDetails[0]">
+                        <td>{{employee.name}}</td>
+                        <td>
+                            <div ng-repeat="role in employee.roles"> 
+                                {{role}}
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
             </div>
       
         </div>
